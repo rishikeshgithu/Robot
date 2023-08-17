@@ -1,0 +1,10 @@
+Main Project : Autonomus Machine
+
+Sub Project :
+1)Locomotion-->Simple Motor code
+2)Vision --> Yolo Object Detection
+3)Surrounding Distance sense -->
+4)Audio Output-->
+5)Audio Input-->
+6)Program ai for path finding-->
+7)Program ai for Speech-->
