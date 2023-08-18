@@ -3,8 +3,15 @@ Main Project : Autonomus Machine
 Sub Project :
 1)Locomotion-->Simple Motor code
 2)Vision --> Yolo Object Detection
-3)Surrounding Distance sense -->
+3)Surrounding Distance sense --> Esp 8266 based ultrasound senesor ("No Coding Done Still")
 4)Audio Output-->
 5)Audio Input-->
 6)Program ai for path finding-->
 7)Program ai for Speech-->
+
+
+
+guid name :mrithula mam mee
+2)sonal agarwal
+3) latha mam
+4)parul mam
