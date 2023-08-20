@@ -44,12 +44,10 @@ void loop() {
 
     response += "<h1>ESP8266 Web Server</h1>";
 
-    response += "<form method='post'>";
-    response += "<button name='btn' value='D1'>Turn D1 ON</button>";
-    response += "<button name='btn' value='D2'>Turn D2 ON</button>";
-    response += "<button name='btn' value='D3'>Turn D3 ON</button>";
-    response += "<button name='btn' value='D4'>Turn D4 ON</button><br>";
-    response += "</form>";
+    response += "<a href='/D1On'>Turn D1 ON</a> | <a href='/D1Off'>Turn D1 OFF</a><br>";
+    response += "<a href='/D2On'>Turn D2 ON</a> | <a href='/D2Off'>Turn D2 OFF</a><br>";
+    response += "<a href='/D3On'>Turn D3 ON</a> | <a href='/D3Off'>Turn D3 OFF</a><br>";
+    response += "<a href='/D4On'>Turn D4 ON</a> | <a href='/D4Off'>Turn D4 OFF</a><br>";
 
     response += "</body></html>";
 
@@ -60,31 +58,35 @@ void loop() {
     
     if (client.available()) {
       String request = client.readStringUntil('\r');
-      if (request.indexOf("D1") != -1) {
+      if (request.indexOf("D1On") != -1) {
         digitalWrite(D1, HIGH);
         Serial.println("D1 is now ON");
-        delay(1000); // Keep D1 on for 1 second
+      }
+      if (request.indexOf("D1Off") != -1) {
         digitalWrite(D1, LOW);
         Serial.println("D1 is now OFF");
       }
-      if (request.indexOf("D2") != -1) {
+      if (request.indexOf("D2On") != -1) {
         digitalWrite(D2, HIGH);
         Serial.println("D2 is now ON");
-        delay(1000);
+      }
+      if (request.indexOf("D2Off") != -1) {
         digitalWrite(D2, LOW);
         Serial.println("D2 is now OFF");
       }
-      if (request.indexOf("D3") != -1) {
+      if (request.indexOf("D3On") != -1) {
         digitalWrite(D3, HIGH);
         Serial.println("D3 is now ON");
-        delay(1000);
+      }
+      if (request.indexOf("D3Off") != -1) {
         digitalWrite(D3, LOW);
         Serial.println("D3 is now OFF");
       }
-      if (request.indexOf("D4") != -1) {
+      if (request.indexOf("D4On") != -1) {
         digitalWrite(D4, HIGH);
         Serial.println("D4 is now ON");
-        delay(1000);
+      }
+      if (request.indexOf("D4Off") != -1) {
         digitalWrite(D4, LOW);
         Serial.println("D4 is now OFF");
       }
