@@ -1,4 +1,4 @@
-const char* ssid = "srinivas";
+const char* ssid = "srinivas1";
 const char* password = "rishi1234";
 int pulse=14;  //GPIO14 to act as trigger pin
 int head=1;   //Define the thereshold number of object capture
